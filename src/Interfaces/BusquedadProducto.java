@@ -138,8 +138,10 @@ public class BusquedadProducto extends javax.swing.JInternalFrame {
         jLabel4 = new javax.swing.JLabel();
         jspcodigo = new javax.swing.JSpinner();
 
+        setBackground(new java.awt.Color(255, 255, 192));
         setClosable(true);
 
+        jLabel1.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 11)); // NOI18N
         jLabel1.setText("ELIJA EL TIPO DE BUSQUEDAD");
 
         tablaproducto.setModel(new javax.swing.table.DefaultTableModel(
@@ -164,6 +166,7 @@ public class BusquedadProducto extends javax.swing.JInternalFrame {
         jScrollPane1.setViewportView(tablaproducto);
 
         btngrupeleccion.add(rbporcod);
+        rbporcod.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 11)); // NOI18N
         rbporcod.setText("POR CODIGO");
         rbporcod.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -172,6 +175,7 @@ public class BusquedadProducto extends javax.swing.JInternalFrame {
         });
 
         btngrupeleccion.add(rbpornom);
+        rbpornom.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 11)); // NOI18N
         rbpornom.setSelected(true);
         rbpornom.setText("POR NOMBRE");
         rbpornom.addActionListener(new java.awt.event.ActionListener() {
@@ -180,6 +184,7 @@ public class BusquedadProducto extends javax.swing.JInternalFrame {
             }
         });
 
+        jLabel2.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 11)); // NOI18N
         jLabel2.setText("ESCRIBA EL NOMBRE O CODIGO A BUSCAR");
 
         combobuscar.setEditable(true);
@@ -189,8 +194,10 @@ public class BusquedadProducto extends javax.swing.JInternalFrame {
             }
         });
 
+        jLabel3.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 11)); // NOI18N
         jLabel3.setText("Mensaje");
 
+        jLabel4.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 11)); // NOI18N
         jLabel4.setText("P ");
 
         jspcodigo.setModel(new javax.swing.SpinnerNumberModel(1, 1, null, 1));
@@ -228,8 +235,8 @@ public class BusquedadProducto extends javax.swing.JInternalFrame {
                                 .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 18, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                                 .addComponent(jspcodigo, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 47, Short.MAX_VALUE)))
-                .addContainerGap(32, Short.MAX_VALUE))
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 515, javax.swing.GroupLayout.PREFERRED_SIZE)

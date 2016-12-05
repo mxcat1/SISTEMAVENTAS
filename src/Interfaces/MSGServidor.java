@@ -65,6 +65,7 @@ public class MSGServidor extends javax.swing.JInternalFrame  implements Runnable
         jLabel1 = new javax.swing.JLabel();
         lbluser = new javax.swing.JLabel();
 
+        setBackground(new java.awt.Color(255, 255, 192));
         setClosable(true);
 
         txtchatadmin.setEditable(false);
@@ -72,6 +73,7 @@ public class MSGServidor extends javax.swing.JInternalFrame  implements Runnable
         txtchatadmin.setRows(5);
         jScrollPane1.setViewportView(txtchatadmin);
 
+        jButton1.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 11)); // NOI18N
         jButton1.setText("ENVIAR");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -85,6 +87,7 @@ public class MSGServidor extends javax.swing.JInternalFrame  implements Runnable
             }
         });
 
+        jLabel1.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 11)); // NOI18N
         jLabel1.setText("CHAT ADMINISTRADOR");
 
         lbluser.setText("-------");

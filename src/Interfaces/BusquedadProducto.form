@@ -6,6 +6,9 @@
     </Component>
   </NonVisualComponents>
   <Properties>
+    <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+      <Color blue="c0" green="ff" red="ff" type="rgb"/>
+    </Property>
     <Property name="closable" type="boolean" value="true"/>
   </Properties>
   <SyntheticProperties>
@@ -57,10 +60,10 @@
                               <Component id="jspcodigo" min="-2" pref="115" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace min="0" pref="47" max="32767" attributes="0"/>
+                      <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace pref="32" max="32767" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
           </Group>
           <Group type="102" alignment="1" attributes="0">
               <EmptySpace max="32767" attributes="0"/>
@@ -100,6 +103,9 @@
   <SubComponents>
     <Component class="javax.swing.JLabel" name="jLabel1">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Microsoft Sans Serif" size="11" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="ELIJA EL TIPO DE BUSQUEDAD"/>
       </Properties>
     </Component>
@@ -168,6 +174,9 @@
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="btngrupeleccion"/>
         </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Microsoft Sans Serif" size="11" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="POR CODIGO"/>
       </Properties>
       <Events>
@@ -179,6 +188,9 @@
         <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
           <ComponentRef name="btngrupeleccion"/>
         </Property>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Microsoft Sans Serif" size="11" style="1"/>
+        </Property>
         <Property name="selected" type="boolean" value="true"/>
         <Property name="text" type="java.lang.String" value="POR NOMBRE"/>
       </Properties>
@@ -188,6 +200,9 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Microsoft Sans Serif" size="11" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="ESCRIBA EL NOMBRE O CODIGO A BUSCAR"/>
       </Properties>
     </Component>
@@ -208,11 +223,17 @@
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel3">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Microsoft Sans Serif" size="11" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="Mensaje"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel4">
       <Properties>
+        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+          <Font name="Microsoft Sans Serif" size="11" style="1"/>
+        </Property>
         <Property name="text" type="java.lang.String" value="P "/>
       </Properties>
     </Component>

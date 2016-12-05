@@ -55,11 +55,12 @@ public class Principal extends javax.swing.JFrame {
         menuEmpleado = new javax.swing.JMenuItem();
         menuempleadon = new javax.swing.JMenuItem();
         menuitempro = new javax.swing.JMenuItem();
-        menuitemventa = new javax.swing.JMenuItem();
         Menuchat = new javax.swing.JMenu();
         chatadmin = new javax.swing.JMenuItem();
         chatuser = new javax.swing.JMenuItem();
         menuSalir = new javax.swing.JMenu();
+        jMenu2 = new javax.swing.JMenu();
+        menuitemventa = new javax.swing.JMenuItem();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -76,7 +77,9 @@ public class Principal extends javax.swing.JFrame {
         );
 
         jMenu1.setText("Registros");
+        jMenu1.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
 
+        menuCliente.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         menuCliente.setText("Cliente");
         menuCliente.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -85,6 +88,7 @@ public class Principal extends javax.swing.JFrame {
         });
         jMenu1.add(menuCliente);
 
+        menuEmpleado.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         menuEmpleado.setText("Empleado Administrador");
         menuEmpleado.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -93,6 +97,7 @@ public class Principal extends javax.swing.JFrame {
         });
         jMenu1.add(menuEmpleado);
 
+        menuempleadon.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         menuempleadon.setText("Empleado");
         menuempleadon.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -101,6 +106,7 @@ public class Principal extends javax.swing.JFrame {
         });
         jMenu1.add(menuempleadon);
 
+        menuitempro.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         menuitempro.setText("Productos");
         menuitempro.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -109,18 +115,12 @@ public class Principal extends javax.swing.JFrame {
         });
         jMenu1.add(menuitempro);
 
-        menuitemventa.setText("Proceso Venta");
-        menuitemventa.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                menuitemventaActionPerformed(evt);
-            }
-        });
-        jMenu1.add(menuitemventa);
-
         jMenuBar1.add(jMenu1);
 
         Menuchat.setText("Servicios");
+        Menuchat.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
 
+        chatadmin.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         chatadmin.setText("CHAT ADMIN");
         chatadmin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -129,6 +129,7 @@ public class Principal extends javax.swing.JFrame {
         });
         Menuchat.add(chatadmin);
 
+        chatuser.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         chatuser.setText("CHAT USER");
         chatuser.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -140,7 +141,22 @@ public class Principal extends javax.swing.JFrame {
         jMenuBar1.add(Menuchat);
 
         menuSalir.setText("Salir");
+        menuSalir.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         jMenuBar1.add(menuSalir);
+
+        jMenu2.setText("Procesos");
+        jMenu2.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+
+        menuitemventa.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
+        menuitemventa.setText("Proceso Venta");
+        menuitemventa.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                menuitemventaActionPerformed(evt);
+            }
+        });
+        jMenu2.add(menuitemventa);
+
+        jMenuBar1.add(jMenu2);
 
         setJMenuBar(jMenuBar1);
 
@@ -267,6 +283,7 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JMenuItem chatuser;
     public static javax.swing.JDesktopPane dkprincipal;
     private javax.swing.JMenu jMenu1;
+    private javax.swing.JMenu jMenu2;
     private javax.swing.JMenuBar jMenuBar1;
     public static javax.swing.JMenuItem menuCliente;
     public static javax.swing.JMenuItem menuEmpleado;

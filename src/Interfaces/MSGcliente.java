@@ -75,12 +75,15 @@ public class MSGcliente extends javax.swing.JInternalFrame implements Runnable{
         txtchatuser = new javax.swing.JTextArea();
         txtmsg = new javax.swing.JTextField();
 
+        setBackground(new java.awt.Color(255, 255, 192));
         setClosable(true);
 
         lbluser.setText("-------");
 
+        jLabel2.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 11)); // NOI18N
         jLabel2.setText("PUEDE ENVIAR UN MENSAJE AL ADMINISTRADOR");
 
+        jButton1.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 11)); // NOI18N
         jButton1.setText("ENVIAR");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {

@@ -184,9 +184,9 @@ public class ManteCliente extends javax.swing.JInternalFrame {
         txtApellidos = new javax.swing.JTextField();
         txtDireccion = new javax.swing.JTextField();
         jPanel2 = new javax.swing.JPanel();
-        comboBuscar = new javax.swing.JComboBox<String>();
+        comboBuscar = new javax.swing.JComboBox<>();
         txtNombres = new javax.swing.JTextField();
-        comoboDistrito = new javax.swing.JComboBox<String>();
+        comoboDistrito = new javax.swing.JComboBox<>();
         rbmasculino = new javax.swing.JRadioButton();
         jLabel1 = new javax.swing.JLabel();
         rbFemenino = new javax.swing.JRadioButton();
@@ -208,7 +208,7 @@ public class ManteCliente extends javax.swing.JInternalFrame {
         txtruc = new javax.swing.JTextField();
         jLabel10 = new javax.swing.JLabel();
 
-        getContentPane().setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        setBackground(new java.awt.Color(255, 255, 192));
 
         txtTelefono.setEnabled(false);
         txtTelefono.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -216,7 +216,6 @@ public class ManteCliente extends javax.swing.JInternalFrame {
                 txtTelefonoKeyTyped(evt);
             }
         });
-        getContentPane().add(txtTelefono, new org.netbeans.lib.awtextra.AbsoluteConstraints(328, 126, 111, -1));
 
         txtDNI.setEnabled(false);
         txtDNI.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -224,14 +223,12 @@ public class ManteCliente extends javax.swing.JInternalFrame {
                 txtDNIKeyTyped(evt);
             }
         });
-        getContentPane().add(txtDNI, new org.netbeans.lib.awtextra.AbsoluteConstraints(328, 152, 111, -1));
 
         txtApellidos.setEnabled(false);
-        getContentPane().add(txtApellidos, new org.netbeans.lib.awtextra.AbsoluteConstraints(69, 126, 155, -1));
 
         txtDireccion.setEnabled(false);
-        getContentPane().add(txtDireccion, new org.netbeans.lib.awtextra.AbsoluteConstraints(69, 152, 200, -1));
 
+        jPanel2.setBackground(new java.awt.Color(255, 255, 192));
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Buscar", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Arial Narrow", 0, 14))); // NOI18N
         jPanel2.setToolTipText("");
 
@@ -262,10 +259,7 @@ public class ManteCliente extends javax.swing.JInternalFrame {
                 .addComponent(comboBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
 
-        getContentPane().add(jPanel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 280, 260, -1));
-
         txtNombres.setEnabled(false);
-        getContentPane().add(txtNombres, new org.netbeans.lib.awtextra.AbsoluteConstraints(328, 100, 155, -1));
 
         comoboDistrito.setToolTipText("");
         comoboDistrito.setEnabled(false);
@@ -274,9 +268,10 @@ public class ManteCliente extends javax.swing.JInternalFrame {
                 comoboDistritoActionPerformed(evt);
             }
         });
-        getContentPane().add(comoboDistrito, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 240, 150, -1));
 
+        rbmasculino.setBackground(new java.awt.Color(255, 255, 192));
         grSexo.add(rbmasculino);
+        rbmasculino.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 14)); // NOI18N
         rbmasculino.setText("Masculino");
         rbmasculino.setEnabled(false);
         rbmasculino.addActionListener(new java.awt.event.ActionListener() {
@@ -284,30 +279,28 @@ public class ManteCliente extends javax.swing.JInternalFrame {
                 rbmasculinoActionPerformed(evt);
             }
         });
-        getContentPane().add(rbmasculino, new org.netbeans.lib.awtextra.AbsoluteConstraints(69, 177, -1, -1));
 
-        jLabel1.setFont(new java.awt.Font("Agency FB", 0, 36)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 36)); // NOI18N
         jLabel1.setText("Manteimiento Cliente");
-        getContentPane().add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(155, 11, -1, -1));
 
+        rbFemenino.setBackground(new java.awt.Color(255, 255, 192));
         grSexo.add(rbFemenino);
+        rbFemenino.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 14)); // NOI18N
         rbFemenino.setText("Femenino");
         rbFemenino.setEnabled(false);
-        getContentPane().add(rbFemenino, new org.netbeans.lib.awtextra.AbsoluteConstraints(153, 177, -1, -1));
 
-        jLabel2.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
+        jLabel2.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 14)); // NOI18N
         jLabel2.setText("Código:");
-        getContentPane().add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(22, 100, -1, -1));
 
-        jLabel9.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
+        jLabel9.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 14)); // NOI18N
         jLabel9.setText("Sexo:");
-        getContentPane().add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 178, -1, -1));
 
-        jLabel3.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
+        jLabel3.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 14)); // NOI18N
         jLabel3.setText("Apellidos:");
-        getContentPane().add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(12, 126, -1, -1));
 
-        butGuardar.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
+        jPanel1.setBackground(new java.awt.Color(255, 255, 192));
+
+        butGuardar.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 14)); // NOI18N
         butGuardar.setText("Guardar");
         butGuardar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -315,7 +308,7 @@ public class ManteCliente extends javax.swing.JInternalFrame {
             }
         });
 
-        bustSalir.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
+        bustSalir.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 14)); // NOI18N
         bustSalir.setText("Salir");
         bustSalir.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -323,6 +316,7 @@ public class ManteCliente extends javax.swing.JInternalFrame {
             }
         });
 
+        btneditar.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 14)); // NOI18N
         btneditar.setText("EDITAR");
         btneditar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -330,6 +324,7 @@ public class ManteCliente extends javax.swing.JInternalFrame {
             }
         });
 
+        btnnuevo.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 14)); // NOI18N
         btnnuevo.setText("NUEVO");
         btnnuevo.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -362,43 +357,36 @@ public class ManteCliente extends javax.swing.JInternalFrame {
                 .addComponent(btneditar)
                 .addGap(18, 18, 18)
                 .addComponent(butGuardar)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 171, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 167, Short.MAX_VALUE)
                 .addComponent(bustSalir)
                 .addContainerGap())
         );
 
-        getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(501, 11, -1, 329));
-
-        jLabel4.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
+        jLabel4.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 14)); // NOI18N
         jLabel4.setText("Direccion:");
-        getContentPane().add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 152, -1, -1));
 
-        jLabel5.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 14)); // NOI18N
         jLabel5.setText("Distrito:");
-        getContentPane().add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 240, -1, -1));
 
-        jLabel6.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 14)); // NOI18N
         jLabel6.setText("DNI:");
-        getContentPane().add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(296, 152, -1, -1));
 
-        jLabel7.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 14)); // NOI18N
         jLabel7.setText("Teléfono:");
-        getContentPane().add(jLabel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(274, 126, -1, -1));
 
-        jLabel8.setFont(new java.awt.Font("Arial Narrow", 0, 14)); // NOI18N
+        jLabel8.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 14)); // NOI18N
         jLabel8.setText("Nombres:");
-        getContentPane().add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(269, 100, -1, -1));
 
         txtCodigo.setEnabled(false);
-        getContentPane().add(txtCodigo, new org.netbeans.lib.awtextra.AbsoluteConstraints(69, 100, 155, -1));
 
+        cbruc.setBackground(new java.awt.Color(255, 255, 192));
+        cbruc.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 14)); // NOI18N
         cbruc.setText("ACTIVAR RUC");
         cbruc.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 cbrucActionPerformed(evt);
             }
         });
-        getContentPane().add(cbruc, new org.netbeans.lib.awtextra.AbsoluteConstraints(340, 180, 140, -1));
 
         txtruc.setEnabled(false);
         txtruc.addActionListener(new java.awt.event.ActionListener() {
@@ -411,10 +399,140 @@ public class ManteCliente extends javax.swing.JInternalFrame {
                 txtrucKeyTyped(evt);
             }
         });
-        getContentPane().add(txtruc, new org.netbeans.lib.awtextra.AbsoluteConstraints(330, 210, 110, -1));
 
+        jLabel10.setFont(new java.awt.Font("Microsoft Sans Serif", 1, 14)); // NOI18N
         jLabel10.setText("RUC:");
-        getContentPane().add(jLabel10, new org.netbeans.lib.awtextra.AbsoluteConstraints(290, 210, -1, -1));
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
+        getContentPane().setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(340, 340, 340)
+                                .addComponent(cbruc, javax.swing.GroupLayout.PREFERRED_SIZE, 140, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(150, 150, 150)
+                                .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 0, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGap(20, 20, 20)
+                                .addComponent(jLabel3)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(txtApellidos, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                                .addComponent(jLabel7))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(38, 38, 38)
+                                        .addComponent(jLabel2)
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addComponent(txtCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, 155, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(18, 18, 18)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                            .addComponent(jLabel4)
+                                            .addComponent(jLabel9))
+                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addGap(84, 84, 84)
+                                                .addComponent(rbFemenino))
+                                            .addComponent(rbmasculino)
+                                            .addComponent(txtDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                                .addGap(0, 2, Short.MAX_VALUE)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addGap(5, 5, 5)
+                                        .addComponent(jLabel8))
+                                    .addComponent(jLabel6, javax.swing.GroupLayout.Alignment.TRAILING)))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGap(0, 0, Short.MAX_VALUE)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel10, javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jLabel5, javax.swing.GroupLayout.Alignment.TRAILING))))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                .addComponent(txtTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtDNI, javax.swing.GroupLayout.PREFERRED_SIZE, 111, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(txtruc, javax.swing.GroupLayout.PREFERRED_SIZE, 110, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addComponent(txtNombres, javax.swing.GroupLayout.PREFERRED_SIZE, 196, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(1, 1, 1)
+                                .addComponent(comoboDistrito, javax.swing.GroupLayout.PREFERRED_SIZE, 150, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addGap(0, 0, Short.MAX_VALUE)
+                        .addComponent(jLabel1)
+                        .addGap(87, 87, 87)))
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+        );
+        layout.setVerticalGroup(
+            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(layout.createSequentialGroup()
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(42, 42, 42)
+                        .addComponent(jLabel1)
+                        .addGap(40, 40, 40)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(jLabel2)
+                                .addComponent(txtCodigo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(txtNombres, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(jLabel8)))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(txtApellidos, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel3))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(jLabel4)
+                                    .addComponent(txtDireccion, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(txtTelefono, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel7))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(txtDNI, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jLabel6))))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(8, 8, 8)
+                                .addComponent(cbruc))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(6, 6, 6)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(rbFemenino)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                        .addComponent(rbmasculino)
+                                        .addComponent(jLabel9)))))
+                        .addGap(4, 4, 4)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel10)
+                            .addComponent(txtruc, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(10, 10, 10)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel5)
+                            .addComponent(comoboDistrito, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addGap(21, 21, 21)
+                        .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(10, 10, 10)
+                        .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(34, Short.MAX_VALUE))
+        );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
